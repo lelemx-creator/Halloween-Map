@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trick or Treat Map 🎃</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="ageGate" class="modal">
+  <div class="modal-content">
+    <h2>🔞 Altersbestätigung</h2>
+    <p>Diese Funktion ist nur für Erwachsene (18+).</p>
+    <button onclick="confirmAge()">Ich bin 18+</button>
+  </div>
+</div>
+
+<header>
+  <h1>🎃 Trick or Treat Map</h1>
+  <p>Trage dein Haus ein, wenn du an Halloween Süßigkeiten verteilst 🎃</p>
+  <button onclick="openForm()">➕ Haus hinzufügen</button>
+  <button id="ghostBtn" onclick="addGhost()" style="display:none;">👻 Wir sind unterwegs</button>
+</header>
+
+<div id="map"></div>
+
+<div id="form" class="modal">
+  <div class="modal-content">
+    <h2>
