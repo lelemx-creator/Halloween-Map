@@ -1,0 +1,12 @@
+{
+  "name": "halloween-map",
+  "version": "1.0.0",
+  "description": "Halloween map with houses and anonymous activity",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
